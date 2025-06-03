@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    margin-bottom: 5rem;
+    background-color: #F2BC8D;
+}
+
+header h1 {
+    background-color: #F2BC8D;
+    color: #115959;
+
+}
+
+header h4 {
+    background-color: #F2BC8D;
+    color: #115959;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #115959;
+}
+
+.iconRow {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 10%;
+    min-width: 10rem;
+    top: 15%;
+    height: 17%;
+    left: 80%;
+    background-color: #F2BC8D;
+}
+
+.iconContainer {
+    min-height: 3rem;
+    min-width: 3rem;
+    border: solid 3px #428C8C;
+    border-radius: 5px;
+    background-color: #F2BC8D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #428C8C;
+
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.iconContainer:hover {
+    cursor: pointer;
+    border-color: #115959;
+    transition: 400ms;
+    color: #115959;
+
+}
+
+.icon {
+    background-color: #F2BC8D;
+}
+
+.icon:hover {
+    transition: 1000ms;
+    color: #115959;
+}
+
+main {
+    padding: 0 8%rem;
+    margin-left: 10%;
+}
+
+h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+
+h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+h3:hover {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: #F2BC8D;
+}
+
+footer p {
+    background-color: #F2BC8D;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #115959;
+}
+
+
+.logo {
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border: solid 5px white;
+}
+
+#projects div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+#projects div .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 80%;
+    max-width: 95%;
+    border-radius: 1rem;
+    padding: 2rem 0 2rem;
+    margin-bottom: 3rem;
+    /* box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.projectText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.techno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #428C8C;
+    border-radius: 20px;
+    width: 250px;
+    height: 30px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+
+}
+
+.projectScreen {
+    width: 33vw;
+    max-height: 37vh;
+    border-radius: 10px;
+}
+
+.portfolio {
+    border: solid 5px white
+}
+
+.screenPhoneContainer {
+    width: 33vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.projectScreenPhone {
+    max-height: 37vh;
+    width: 10vw;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.projectScreen:hover {
+    cursor: pointer;
+}
+
+.lightgrey {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    color: #edf4f4;
+
+}
+
+.shortDescription {
+    margin-bottom: 2rem;
+}
+
+#About p {
+    max-width: 60vw;
+    font-family: "Work Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 2rem;
+    color: #edf4f4;
+}
+
+#About h2 {
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 6vw;
+    }
+
+    header h4 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .logo {
+        height: 25vw;
+        max-height: 150px;
+    }
+
+    .iconRow{
+        position: initial;
+        margin-bottom: 2rem;
+        min-width: 12rem;
+    }
+
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .projectText {
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .techno {
+        width: auto;
+        max-width: 80%;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .projectScreen {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .screenPhoneContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    #About {
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    #About p {
+        max-width: 100%;
+        font-size: 1rem;
+        margin: 0 auto 2rem auto;
+    }
+
+    main {
+        padding: 0 5%;
+        margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+        font-size: 5vw;
+    }
+}

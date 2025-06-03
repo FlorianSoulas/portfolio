@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    margin-bottom: 3rem;
+    background-color: #F2BC8D;
+}
+
+header h1 {
+    background-color: #F2BC8D;
+    color: #115959;
+
+}
+
+header h4 {
+    background-color: #F2BC8D;
+    color: #115959;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #115959;
+}
+
+.iconRow {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 10%;
+    min-width: 10rem;
+    top: 15%;
+    height: 17%;
+    left: 80%;
+    background-color: #F2BC8D;
+}
+
+.arrow {
+    position: absolute;
+    right: 95%;
+    top: 15%
+}
+
+.iconContainer {
+    min-height: 3rem;
+    min-width: 3rem;
+    border: solid 3px #428C8C;
+    border-radius: 5px;
+    background-color: #F2BC8D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #428C8C;
+
+}
+
+.iconContainer:hover {
+    cursor: pointer;
+    border-color: #115959;
+    transition: 400ms;
+    color: #115959;
+
+}
+
+.icon {
+    background-color: #F2BC8D;
+}
+
+.icon:hover {
+    transition: 1000ms;
+    color: #115959;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+
+h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+h3:hover {
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 100%;
+    padding: 4rem;
+}
+
+.textContent {
+    width: 40%;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 2rem;
+    color: #edf4f4;
+}
+
+.lastParagraph {
+    margin-bottom: 2rem;
+}
+
+.techno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    background-color: #428C8C;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.techno:hover {
+    cursor: pointer;
+    background-color: #F2BC8D;
+    transition: 400ms;
+    ;
+}
+
+.projectScreen {
+    max-width: 40%;
+    max-height: fit-content;
+    margin-bottom: 5rem;
+}
+
+.portfolio {
+    border: solid 5px white
+}
+
+.projectScreenPhone {
+    max-height: 45vh;
+    width: 12vw;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.technoContainer {
+    display: flex;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: #F2BC8D;
+}
+
+footer p {
+    background-color: #F2BC8D;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #115959;
+}
+
+
+.logo {
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border: solid 5px white;
+}
+
+
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 6vw;
+    }
+
+    header h4 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .logo {
+        height: 25vw;
+        max-height: 150px;
+    }
+
+    .arrow {
+        position: absolute;
+        left: 2rem;
+        top: 2rem;
+    }
+
+    .iconRow {
+        position: initial;
+        margin-bottom: 2rem;
+        min-width: 14rem;
+    }
+
+    .contentContainer {
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+
+    .projectText {
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .textContent {
+        width: 60%;
+    }
+
+    .techno {
+        width: 8rem;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .technoContainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 3rem;
+    }
+
+    .projectScreen {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .projectScreenPhone{
+        width: 60%;
+        margin-bottom: 2rem;
+        max-height: 50%;
+    }
+
+    main {
+        padding: 0 5%;
+        margin: 0 auto;
+    }
+
+    h1,
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+}

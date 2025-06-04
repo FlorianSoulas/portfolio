@@ -244,6 +244,7 @@ footer p {
         align-items: center;
         flex-wrap: nowrap;
         flex-direction: column;
+        padding: 1rem;
     }
 
 
@@ -254,7 +255,7 @@ footer p {
     }
 
     .textContent {
-        width: 60%;
+        width: 100%;
     }
 
     .techno {
@@ -296,3 +297,4 @@ footer p {
         font-size: 4vw;
     }
 }
+
